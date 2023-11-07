@@ -1,0 +1,9 @@
+#animatedElement {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transition: left 1s;
+}

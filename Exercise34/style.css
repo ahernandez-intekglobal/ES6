@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0in;
+    left: 50%;
+    animation: bounce 1s ease-out infinite alternate;
+}
+
+@keyframes bounce {
+    0% { 
+        transform: translateY(0in); 
+    } 
+    100% { 
+        transform: translateY(var(--max-height));
+    }
+
+} 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise22</title>
+    <style>
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <button id="changeColorButton">Change Color</button>
+    <div id="colorBox"></div>
+
+    <script>
+        let colorBox = document.getElementById("colorBox");
+        let changeColorButton = document.getElementById("changeColorButton");
+
+        changeColorButton.addEventListener("click", () => {
+            let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+            
+            colorBox.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>
